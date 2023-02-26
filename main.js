@@ -17,7 +17,7 @@ function getMovie() {
                         <div>
                             <h2>${data.Title}</h2>
                             <div class="rating">
-                                <img src="star-icon.svg">
+                                <img src="img/star-icon.svg">
                                 <h4>${data.imdbRating}</h4>
                             </div>
                             <div class="details">
@@ -29,10 +29,11 @@ function getMovie() {
                                 <div>${data.Genre.split(",").join("</div><div>")}</div>
                             </div>
                         </div>
-                        <h3>Plot:</h3>
-                        <p>${data.Plot}</p>
-                        <h3>Cast:</h3>
-                        <p>${data.Actors}</p>`;
+                    </div>
+                    <h3>Plot:</h3>
+                    <p>${data.Plot}</p>
+                    <h3>Cast:</h3>
+                    <p>${data.Actors}</p>`;
             } else {
                 result.innerHTML = `<h3 class="msg">${data.Error}</h3>`;
             }
